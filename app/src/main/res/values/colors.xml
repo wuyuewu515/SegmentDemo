@@ -3,4 +3,142 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="bg_main">#f2f2f2</color>
+    <color name="bg_f2">#f2f2f2</color>
+    <color name="bg_f3">#F3f3F3</color>
+    <color name="transparent">#00000000</color>
+    <color name="activity_backgroud">@color/bg_main</color>
+
+    <!-- 字体 分割线等 黑 白 -->
+    <color name="font_black">#333</color>
+    <color name="font_dark_gray">@color/font_gray_66</color>
+    <color name="font_gray_66">#666666</color>
+    <color name="font_black_80">#808080</color>
+    <color name="font_light_gray">#999</color>
+    <color name="font_green">#7bd024</color>
+    <color name="tv_green_fg">#85c340</color>
+    <color name="font_white">#fff</color>
+    <color name="font_hint_gray">#ccc</color>
+    <color name="divider">@color/font_hint_gray</color>
+    <color name="divider_main_navigation">#b2b2b2</color>
+    <color name="font_textview_btn">#60a8ee</color>
+    <color name="font_white_80">#80ffffff</color>
+    <color name="font_red_f56">#f56D6B</color>
+    <color name="font_red_ffa">#FFA94D</color>
+
+    <!--按钮相关颜色-->
+    <color name="btn_enabele">#60a8ee</color>
+    <color name="btn_disable">#ddd</color>
+    <color name="webview_btn_backgroud">#7fffffff</color>
+
+    <color name="xlistview_foot_divider">#999</color>
+
+    <color name="progress_color">#FFA94D</color>
+    <color name="round_color">#ddd</color>
+    <color name="round_text_color">@color/round_color</color>
+
+    <color name="dialog_backgroud">#99000000</color>
+    <!--秒分颜色-->
+    <!--注按钮不能使用的颜色-->
+    <color name="btn_main_disable">#cccccc</color>
+    <!--用于标题栏背景-->
+    <color name="title">#062D77</color>
+    <!--首页table文字不可用-->
+    <color name="title_disable">#A7BCE5</color>
+    <!--首页文字不可用-->
+    <color name="tv_disable">#C9C9C9</color>
+    <!--浅绿色-->
+    <color name="tv_green">#A8D18B</color>
+    <color name="tv_blue_light">#B4BBD1</color>
+
+    <color name="trans">#00000000</color>
+    <color name="bg_white">#ffffff</color>
+
+    <!--用于按钮及其他需要高亮的地方-->
+    <color name="btn_main">#C33D80</color>
+    <!--按钮按下-->
+
+    <color name="btn_bill_delete">#F15657</color>
+    <!--按钮按下-->
+
+    <color name="home_bg">#F7F8F9</color>
+    <color name="home_bg_tv">#E6304B</color>
+
+    <!--电商内嵌页底栏的颜色-->
+
+    <!--文字-->
+    <!--输入框提示和其他若提示-->
+    <!--输入框输入及重点强调文字-->
+    <color name="char_stress">#D0D0D0</color>
+    <color name="char_stress_red">#F15657</color>
+    <color name="char_stage_rb">#4A4A4A</color>
+    <color name="char_gray">#44464C</color>
+    <!--内容区域标题及一般强调-->
+    <color name="char_title">#666666</color>
+    <!--普通文字-->
+    <color name="char_normal">#6B7082</color>
+    <color name="char_normal2">#9FABB8</color>
+    <color name="char_normal3">#B6B5B5</color>
+    <color name="char_normal4">#A7A6A6</color>
+    <color name="half_white">#7FFFFFFF</color>
+    <!--内容区域底色-->
+    <!--表单页分割线-->
+    <color name="cutoff_rule">#D0D0D0</color>
+    <color name="cutoff_rule2">#DEDEDE</color>
+    <color name="cutoff_rule3">#E7E7E7</color>
+    <!--分隔模块底色-->
+    <color name="cutoff_background">#F1F1F1</color>
+
+    <!--天短信验证码背景颜色-->
+    <color name="bg_gray_f5">#F5F5F5</color>
+    <!--导航栏背景颜色-->
+    <color name="bg_titlbar">#062D77</color>
+    <color name="bg_photo">#363E4D</color>
+    <!--Load 背景-->
+    <color name="bg_loading">#4C84DD</color>
+    //home_background
+    <color name="home_background">#F0F0F0</color>
+
+    <color name="btn_introduce">#6097F7</color>
+    <color name="dot_selected">#C6C2C2</color>
+    <color name="tv_gray">#C3C3C3</color>
+
+    <color name="btn_main_red">#E6304B</color>
+    <color name="btn_light_red">#D37785</color>
+    <color name="btn_tv_red">#E9445C</color>
+    <color name="btn_light_gray">#D9D9D9</color>
+    <color name="tv_blue">#3D85CC</color>
+    <color name="tv_blue_2">#4678C7</color>
+    <!--旅游产品详情颜色-->
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">@android:color/transparent
+    </color>
+
+    <!--机票背景-->
+    <color name="air_tiket_payment_commit">#DE1A1A</color>
+    <color name="air_tiket_operation">#0099e6</color>
+
+    <color name="text_hil_light_blue">#0099e6</color>
+
+    <color name="selector_new_common_selected">#FF4C53</color>
+
+    <color name="bg_red_main">#E6304B</color>
+    <color name="bg_blue_stroke">#A3B2EC</color>
+    <color name="bg_dack_gray">#E4E9F4</color>
+    <color name="bg_gray_stroke">#DDDFE9</color>
+    <color name="devider_gray">#E0E0E0</color>
+    <color name="tv_guid">#6B7082</color>
+    <color name="tv_guid_devider">#D0D0D0</color>
+
+    <color name="tv_input_hint">#D0D0D0</color>
+    <color name="tv_input_title">#6B7082</color>
+    <color name="devider_input_hint">#F1F1F1</color>
+
+    <color name="div_text_title">#A6A5A5</color>
+    <color name="div_text_result">#44464B</color>
+    <color name="bodrer_color">#8C909D</color>
+    <color name="city_tag_bg">#ededed</color>
+
+
 </resources>

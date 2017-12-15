@@ -5,8 +5,6 @@ import android.util.AttributeSet;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 
-import java.util.List;
-
 /**
  * 项目名称：SegmentViewDemo
  * 类描述：仿照ios通知栏切换

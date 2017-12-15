@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/btn_enabele"
+    android:shape="rectangle">
+    <corners android:radius="20dp" />
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/bg_red_main" />
+    <solid android:color="@color/bg_white" />
+</shape>
