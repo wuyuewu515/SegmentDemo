@@ -7,7 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;
-import android.view.ViewGroup;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -27,6 +27,8 @@ public class SegmentView extends RadioGroup implements RadioGroup.OnCheckedChang
     private int textSize = 16; //字体大小
     private RadioButton radioButtons[];
     private String titles[];
+    private onSegmentViewClickListener segmentListener;
+
 
     public SegmentView(Context context) {
         this(context, null);
@@ -48,8 +50,7 @@ public class SegmentView extends RadioGroup implements RadioGroup.OnCheckedChang
             initTextView(number);
             typedArray.recycle();
         }
-
-
+        setOnCheckedChangeListener(this);
     }
 
     private void initTextView(int number) {
@@ -109,9 +110,27 @@ public class SegmentView extends RadioGroup implements RadioGroup.OnCheckedChang
 
     }
 
-    @Override
-    public void onCheckedChanged(RadioGroup radioGroup, int i) {
+    int lastCheckIndex = -1;
 
+    @Override
+    public void onCheckedChanged(RadioGroup radioGroup, int checkId) {
+        int index = checkId - START_ID;
+        if (null == radioButtons || number <= index)
+            return;
+        for (RadioButton button : radioButtons) {
+            button.setCompoundDrawables(null, null, line, null);
+        }
+        if (index > 0) {
+            radioButtons[index - 1].setCompoundDrawables(null, null, null, null);
+        }
+        radioButtons[index].setCompoundDrawables(null, null, null, null);
+        lastCheckIndex = index;
+        //最后一个
+        radioButtons[number - 1].setCompoundDrawables(null, null, null, null);
+
+        if (null != segmentListener) {
+            segmentListener.onSegmentViewClick(this, index);
+        }
     }
 
     //设置选择器的标题
@@ -128,5 +147,15 @@ public class SegmentView extends RadioGroup implements RadioGroup.OnCheckedChang
     public static int dip2px(Context context, float dpValue) {
         final float scale = context.getResources().getDisplayMetrics().density;
         return (int) (dpValue * scale + 0.5f);
+    }
+
+
+    // 定义一个接口接收点击事件
+    public interface onSegmentViewClickListener {
+        public void onSegmentViewClick(View view, int postion);
+    }
+
+    public void setOnSegmentViewClickListener(onSegmentViewClickListener segmentListener) {
+        this.segmentListener = segmentListener;
     }
 }
